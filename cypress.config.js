@@ -8,15 +8,12 @@ function removeFolder(folderName) {
 
 module.exports = defineConfig({
   chromeWebSecurity: false,
-  reporter: 'mochawesome',
+  reporter: "mochawesome",
   reporterOptions: {
-  reportDir: 'reports/mochawesome',
-  overwrite: false,
-  html: true,
-  json: true,
-  embeddedScreenshots: true,
-  inlineAssets: true,
-  reportFilename: '[status]-[name]-[datetime]'
+    reportDir: "cypress/reports",
+    overwrite: false,
+    html: false, 
+    json: true
   },
   e2e: {
     setupNodeEvents(on, config) {

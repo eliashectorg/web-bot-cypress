@@ -5,12 +5,16 @@
     "cy:run:hrm": "cypress run  --env target=OrangeHRMWeb --spec 'cypress/e2e/tests/OrangeHRM/**/*.spec.js'",
     "cy:run:bot": "cypress run  --env target=EcommerceWeb --spec 'cypress/e2e/tests/CypressBot/**/*.spec.js'",
     "cy:run:hrm:ordered": "cypress run --env target=OrangeHRMWeb --spec 'cypress/e2e/tests/OrangeHRM/01-LoginTest.spec.js,cypress/e2e/tests/OrangeHRM/02-MyInfoTest.spec.js'",
-    "cy:test:all": "npm run cy:run:hrm:ordered && npm run cy:run:bot"
+    "cy:test:all": "npm run cy:run:hrm:ordered && npm run cy:run:bot",
+    "merge-reports": "mochawesome-merge cypress/reports/*.json > cypress/reports/report.json",
+    "generate-report": "marge cypress/reports/report.json --reportDir cypress/reports --inline"
   },
   "devDependencies": {
     "cypress": "^15.2.0",
     "cypress-iframe": "^1.0.1",
     "fs-extra": "^11.3.2",
-    "mochawesome": "^7.1.4"
+    "mochawesome": "^7.1.4",
+    "mochawesome-merge": "^5.0.0",
+    "mochawesome-report-generator": "^6.3.0"
   }
 }
