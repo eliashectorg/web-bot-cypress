@@ -24,7 +24,7 @@ Test reports are generated with **Mochawesome** (HTML).
 
 - **Run in headless mode (CLI):**
   ```bash
-  npm run cy:run:bot:bot
+  npm run cy:run:bot
 
 ### Run everything (OrangeHRM + E-Commerce (ChatBot))
 - **Run in headless mode sequential (CLI):**
