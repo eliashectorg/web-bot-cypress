@@ -14,6 +14,8 @@ jobs:
       - uses: cypress-io/github-action@v6
         with:
           command: npm run cy:test:all
+        env:
+          DBUS_SESSION_BUS_ADDRESS: /dev/null
 
       - name: Upload Cypress artifacts
         if: always()
