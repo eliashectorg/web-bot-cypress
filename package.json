@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "cy:open:hrm": "cypress open --env target=OrangeHRMWeb --config specPattern='cypress/e2e/tests/OrangeHRM/**/*.spec.js'",
+    "cy:open:bot": "cypress open --env target=EcommerceWeb --config specPattern='cypress/e2e/tests/CypressBot/**/*.spec.js'",
+    "cy:run:hrm": "cypress run  --env target=OrangeHRMWeb --spec 'cypress/e2e/tests/OrangeHRM/**/*.spec.js'",
+    "cy:run:bot": "cypress run  --env target=EcommerceWeb --spec 'cypress/e2e/tests/CypressBot/**/*.spec.js'",
+    "cy:run:hrm:ordered": "cypress run --env target=OrangeHRMWeb --spec 'cypress/e2e/tests/OrangeHRM/01-LoginTest.spec.js,cypress/e2e/tests/OrangeHRM/02-MyInfoTest.spec.js'",
+    "cy:test:all": "npm run cy:run:hrm:ordered && npm run cy:run:bot"
+  },
+  "devDependencies": {
+    "cypress": "^15.2.0",
+    "cypress-iframe": "^1.0.1",
+    "fs-extra": "^11.3.2",
+    "mochawesome": "^7.1.4"
+  }
+}

@@ -1,0 +1,16 @@
+# Node
+node_modules/
+npm-debug.log
+
+# Cypress
+cypress/videos/
+cypress/screenshots/
+cypress/downloads/
+
+# Reports
+reports/
+mochawesome-report/
+
+# OS
+.DS_Store
+Thumbs.db

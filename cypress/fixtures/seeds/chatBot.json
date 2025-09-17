@@ -1,0 +1,14 @@
+{
+    "expectedMessages": {
+        "welcomeMessage": "Hola, deja tus datos para que podamos contactarte aunque te hayas retirado del sitio.",
+        "thanksMessage": "¡Gracias! Envíanos un mensaje aquí."
+    },
+    "personalInformation": {
+        "name": "Peter Parker",
+        "email": "pedro.parker@example.com",
+        "message": "I need information about new tees"
+    },
+    "inputMessages": {
+        "greetingMessage": "Hola!"
+    }
+}
